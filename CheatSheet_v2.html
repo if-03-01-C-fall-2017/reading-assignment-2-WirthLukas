@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Information für die Quizzes">
+		<link rel="stylesheet" type="text/css" href="StyleSheet.css" >
+		<title>CheatSheet</title>
+	</head>
+	
+	<body>
+		<article>
+			<h1>Inhaltsverzeichnis</h1>
+			<ul>
+				<li><a href="#A1">World Wide Web</a></li>
+				<ul>
+					<li><a href="#B1">Wichtigsten Technologien</a></li>
+					<li><a href="#B2">URL</a></li>
+				</ul>
+				<li><a href="#A2">Web Server</a></li>
+				<li><a href="#A3">Web Client</a></li>
+				<li><a href="#A4">HTML</a></li>
+				<ul>
+					<li><a href="#B3">HTML Elemente</a></li>
+					<li><a href="#B4">DOCTYPE</a></li>
+					<li><a href="#B5">Attribute</a></li>
+					<li><a href="#B6">html Tag</a></li>
+					<li><a href="#B7">Hervorhebung</a></li>
+					<li><a href="#B8">wichtigsten HTML Elemente</a></li>
+					<li><a href="#B9">Weitere wichtige HTML Elemente</a></li>
+					<li><a href="#B10">Kommentare</a></li>
+				</ul>
+				<li><a href="#A5">CSS</a></li>
+				<ul>
+					<li><a href="#B11">CSS Syntax</a></li>
+					<li><a href="#B12">CSS Kommentare</a></li>
+					<li><a href="#B13">Farben</a></li>
+					<li><a href="#B14">Hintergründe</a></li>
+					<li><a href="#B15">Text</a></li>
+					<li><a href="#B16">Fonts</a></li>
+					<li><a href="#B17">Link gestallten</a></li>
+					<li><a href="#B18">CSS Kombinatoren</a></li>
+					<li><a href="#B19">Pseudo Klassen</a></li>
+				</ul>
+			</ul>
+		</article>
+		<article id="A1">			
+			<h1 >World Wide Web</h1>
+			
+			<h2 id="B1">Die wichtigsten Technologien die das Web zum Erfog gemacht haben</h2> 
+			<ul>
+				<li><b>U</b>niform <b>R</b>esource <b>L</b>ocator (URL) und <b>U</b>niform <b>R</b>esource <b>I</b>dentifier (URI)</li>
+				<li><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage (HTML)</li>
+				<li><b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol (HTTP)</li>
+			</ul>
+			<h2 id="B2">URL</h2>
+			<p>
+				Die allgemeinen Bestandteile einer URL sind:			
+			</p>
+			<ul>
+				<li>Protokoll (z.B. http)</li>
+				<li>Hostname (z.B. www.example.com)</li>
+				<li>Dateiname (z.B. index.html)</li>
+			</ul>
+		</article>	
+		<article id="A2">
+			<h1>Web Server</h1>
+			<p>
+				Ein Webserver ist ein Computersystem, das Anforderungen über HTTP verarbeitet (das grundlegende Netzwerkprotokoll, das verwendet wird,
+				um Informationen über das World Wide Web zu verteilen).	Die primäre Funktion eines Webservers ist die Speicherung, Verarbeitung und
+				Bereitstellung von Webseiten an Clients. Die Kommunikation zwischen Client und Server erfolgt über das Hypertext Transfer Protocol (HTTP).
+			</p>
+			<p>
+				Inhalte werden auf ihren Datenbanken gespeichert. Auf dem Web-Server ist die HTML-Datei, die der Client bekommen kann, damit er die
+				Seite sehen kann. Der Inhalt von Webseiten wird in HTML geschrieben.
+			</p>
+		</article>
+		<article id="A3">
+			<h1>Web Client</h1>
+			<p>
+				Webbrowser oder allgemein auch Browser sind spezielle Computerprogramme zur Darstellung von Webseiten im World Wide Web 
+				oder allgemein von Dokumenten und Daten. Neben HTML-Seiten können Webbrowser verschiedene andere Arten von Dokumenten wie
+				zum Beispiel Bilder und PDF-Dokumente anzeigen. Webbrowser stellen die Benutzeroberfläche für Webanwendungen dar.
+			</p>
+		</article>
+		<article id="A4">
+			<h1>HTML</h1>			
+			<section id="B3">
+				<h2>HTML Elemente</h2>
+				<p>
+					Ein HTML-Element besteht normalerweise aus einem Start-Tag und einem End-Tag, mit dem Inhalt dazwischen.<br/>
+					<strong>&lt;tagname&gt;Inhalt... &lt;/tagname&gt;</strong>
+				</p>
+				<h3>Void Elements</h3>
+				<p>
+					HTML-Elemente ohne Inhalt werden als <em>void elements</em> bezeichnet. <em>Void elements</em> können im Start-Tag geschlossen werden:<br/>
+					z.B.: &lt;br /&gt; <i>(Zeilenumbruch)</i>
+				</p>
+			</section>
+			<section id="B4">
+				<h2>DOCTYPE</h2>
+				<p>
+					Die !DOCTYPE Dekleration ist kein HTML-Tag. Sie ist eine Anweisung für den Webbrowser, über welche HTML Version die Seite geschrieben wird.
+					(In HTML 5 sieht das so aus: &lt;!DOCTYPE html&gt;)
+				</p>
+			</section>			
+			<section id="B5">
+				<h2>Attribute</h2>
+				<p>
+					<ul>
+						<li>Alle HTML-Elemente können Attribute haben</li>
+						<li>Attribute liefern zusätzliche Informationen zu einem Element</li>
+						<li>Attribute werden immer im Start-Tag angegeben</li>
+						<li>Attribute kommen normalerweise in Name/Wert Paare vor. Wie: name = "value"</li>
+					</ul>
+				</p>
+				<h3>Das href-Attribut</h3>
+				<p>
+					HTML-Links werden mit dem &lt;a&gt;-Tag definiert. Die Linkadresse wird im href-Attribut angegeben.<br/>
+					z.B.: &lt;a href="https://www.w3schools.com"&gt;Das ist ein Link&lt;/a&gt;
+				</p>
+				<h3>Das scr-Attribut</h3>
+				<p>
+					HTML-Bilder werden mit dem &lt;img&gt;-Tag definiert. Der Dateiname der Bildquelle wird im src-Attribut angegeben.
+				</p>
+				<h3>Das alt-Attribut</h3>
+				<p>
+					Das alt-Attribut gibt einen alternativen Text an, der verwendet werden soll, wenn ein Bild nicht angezeigt werden kann.
+				</p>
+				<h3>Das lang-Attribut</h3>
+				<p>
+					Die Sprache des Dokuments kann im &lt;html&gt;-Tag mit dem lang-Attribut deklariert werden.
+				</p>
+				<h3>Das title-Attribut</h3>
+				<p>
+					Das Titelattribut liefert zusätzliche "Tool-Tipp" -Informationen, die angezeigt werden wenn man mit der Maus über den
+					Absatz(oder der Überschrift, ...) fährt.
+				</p>
+			</section>
+			<section id="B6">
+				<h2>Der "html tag"</h2>
+				<ul>
+					<li>Er teilt dem Browser mit, dass es sich um ein HTML-Dokument handelt.</li>
+					<li>Er repräsentiert den Stamm eines HTML-Dokuments.</li>
+					<li>Er ist der Behälter für alle anderen HTML-Elemente (mit Ausnahme des !DOCTYPE tags).</li>
+				</ul>
+			</section>
+			<section id="B7">
+				<h2>Hervorhebungen eines Textes</h2>
+				<ul>
+					<li><b>Der em tag:</b> macht einen Text hervorgehobener. Wird meist kursiv dargestellt</li>
+					<li><b>Der strong tag:</b> markiert wichtigen Text. Wird fett gedruckt dargestellt</li>
+					<li><b>Der b tag:</b> macht den Text fett gedruckt</li>
+				</ul>
+			</section>			
+			<section id="B8">
+				<h2>Die beiden wichtigsten HTML Elemente</h2>
+				<h3>Das Head Element</h3>
+				<p>
+					Das Head-Element ist ein Container für Metadaten über das HTML-Dokument. Sie werden nicht angezeigt. Metadaten definieren
+					typischerweise den Dokumententitel, den Zeichensatz, die Stile, die Links, die Skripte und andere Metainformationen.
+				</p>
+				<h4>Das Title Element</h4>
+				<p>
+					Es definiert den Titel des Dokuments und ist in allen HTML/XHTML-Dokumenten erforderlich.
+				</p>
+				<h4>Das Link Element</h4>
+				<p>
+					Es wird verwendet, um mit externen Stylesheets zu verknüpfen.<br/>
+					z.B.: &lt;link rel="stylesheet" type="text/css" href="StyleSheet.css"&gt;
+				</p>
+				<h4>Das Meta Element</h4>
+				<p>
+					Mit ihm werden Zeichensätze, Seitenbeschreibung, Schlüsselwörter, Autor und andere Metadaten festgelegt. Beispiele:<br/>
+					&lt;meta charset="UTF-8"&gt;
+					&lt;meta name="description" content="Free Web tutorials"&gt;
+					&lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
+					&lt;meta name="author" content="John Doe"&gt;
+				</p>
+				<h3>Das Body Element</h3>
+				<p>
+					Es enthält alle Inhalte eines HTML-Dokuments wie Text, Hyperlinks, Bilder, Tabellen, Listen usw.
+				</p>
+			</section>
+			<section id="B9">
+				<h2>Weitere wichtige HTML Elemente</h2>
+				<h3>Der Artikel</h3>
+				<p>
+					Das Artikel ELement gibt unabhängige, in sich geschlossene Inhalte an. Ein Artikel sollte selbstverständlich sein und es sollte
+					möglich sein, ihn unabhängig vom Rest der Seite zu verteilen. Syntax:
+				</p>
+				<pre>
+					&lt;article&gt;
+						content
+					&lt;/article&gt;
+				</pre>
+				<h3>Zeilenumbruch</h3>
+				<p>
+					Verwenden Sie &lt;br/&gt;, wenn Sie einen Zeilenumbruch (eine neue Zeile) wollen, ohne einen neuen Absatz zu starten.
+				</p>
+				<h3>Überschriften</h3>
+				<p>
+					Überschriften sind mit den &lt;h1&gt; bis &lt;h6&gt; tags definiert. &lt;h1&gt; wichtigste Überschrift. &lt;h6&gt; 
+					am wenigsten wichtigste Überschrift. z.B.: &lt;h1&gt;Überschrift 1&lt;/h1&gt;
+				</p>
+				<p title="Horizontale Linie">
+					&lt;hr/&gt; definiert eine thematische Veränderung des Inhalts. Wird als horizontale Linie dargestellt.
+				</p>
+				<h3>Paragraphen</h3>
+				<p>
+					Das HTML &lt;p&gt;-Element definiert einen Absatz. Syntax:
+				</p>
+				<pre>
+					&lt;p&gt;
+						Inhalt
+					&lt;/p&gt;
+				</pre>
+				<p>
+					&lt;pre&gt; definiert vorformatierten Text.
+				</p>
+				<h3>Bilder</h3>
+				<p>
+					In HTML werden Bilder mit dem &lt;img&gt;-Tag definiert. Es enthält nur Attribute und hat keinen Schluss-Tag. 
+					Das src-Attribut gibt die URL (Webadresse) des Bildes an. alt-Attribut: siehe Attribute.<br/>
+					Syntax: 
+				</p>
+				<pre>
+					&lt;img scr="url" alt="irgendein Text"/&gt;
+				</pre>
+				<h3>Section</h3>
+				<p>
+					Das &lt;section&gt;-Tag definiert Abschnitte in einem Dokument, wie z. B. Kapitel, Kopfzeilen, Fußzeilen oder andere Abschnitte des Dokuments.<br/>
+					Syntax:
+				</p>
+				<pre>
+					&lt;section&gt;
+						Inhalt
+					&lt;/section&gt;
+				</pre>
+				<h3>Links</h3>
+				<p>
+					HTML-Links sind Hyperlinks. Man kann auf einen Link klicken und zu einem anderen Dokument springen.<br/>
+					Syntax:
+				</p>
+				<pre>
+					&lt;a href="url"&gt;link text&lt;/a&gt;
+				</pre>
+				<p>
+					<strong>Bookmarks: </strong> Zuerst muss man ein Bookmark mit dem id-Attribut machen. z.B.: &lt;h1 id="c1"&gt;Chapter 1&lt;/h1&gt; Dann
+					beim href den Bookmark eingeben und du hast eine Verlinkung zu der Überschrift.
+				</p>
+			</section>
+			<section id="B10">
+				<h2>Kommentare</h2>
+				<p>
+					Kommentar-Tags werden verwendet, um Kommentare in den HTML-Quellcode einzufügen. Syntax:
+				</p>
+				<pre>
+					&lt;!-- Write your comments here --&gt;
+				</pre>
+			</section>
+		</article>
+		<article id="A5">
+			<h1>CSS</h1>
+			<section id="B11">
+				<h2>CSS Syntax</h2>
+				<p>					
+					Ein CSS-Regelsatz besteht aus einem Selektor und einem Deklarationsblock. Der Selektor zeigt auf das HTML-Element, das man stylen möchte.
+					Der Deklarationsblock enthält eine oder mehrere Deklarationen, die durch Semikolons getrennt sind. Jede Deklaration enthält einen 
+					CSS-Eigenschaftsnamen und einen Wert, der durch einen Doppelpunkt getrennt ist. Eine CSS-Deklaration endet immer mit einem Semikolon, und 
+					Deklarationsblöcke sind von geschweiften Klammern umgeben.
+				</p>
+				<pre>
+					Selector {															
+						Property: Value;					
+					}									 
+				</pre>
+				<pre>
+				   Bsp:	h1 {
+							color: blue;
+						}
+				</pre>
+				<h3>Gruppierte Selektoren</h3>
+				<p>
+					Wenn man Elemente mit den gleichen Stildefinitionen hat, ist es besser, die Selektoren zu gruppieren, um den Code zu minimieren. Um 
+					Gruppenselektoren zu gruppieren, trennt man jeden Selektor mit einem Komma. z.B.:
+				</p>
+				<pre>
+					h1,h2,h3 {
+						color: red;
+					}
+				</pre>
+			</section>
+			<section id="B12">
+				<h2>CSS Kommentare</h2>
+				<pre>
+					/* This is a single-line comment */
+				</pre>
+			</section>
+			<section id="B13">
+				<h2>Farben</h2>
+				<p>
+					<strong>Farbnamen: </strong>In HTML kann eine Farbe mit einem Farbnamen angegeben werden. 
+					<a href="https://www.w3schools.com/colors/colors_names.asp">Diese Farben gibt es</a>
+				</p>
+				<p>
+					In HTML kann eine Farbe mit einem Hexadezimalwert in dieser Form angegeben werden:<br/>
+					#rrggbb<br/>
+					Wo <b>rr (rot)</b>, <b>gg (grün)</b> und <b>bb (blau)</b> hexadezimale Werte zwischen 00 und ff (wie dezimal 0-255) sind. Beispielsweise wird #ff0000 als rot 
+					angezeigt, da Rot auf den höchsten Wert (ff) gesetzt ist und die anderen auf den niedrigsten Wert (00).
+				</p>
+			</section>
+			<section id="B14">
+				<h2>Hintergründe</h2>
+				<p>
+					<h3>background-color Property</h3>
+					<p>
+						Der background-color Property gibt die Hintergrundfarbe eines Elements an. Syntax:
+					</p>
+					<pre>
+						background-color: colorname;
+					</pre>
+					<h3>background-image Property</h3>
+					<p>
+						Syntax:
+					</p>
+					<pre>
+						background-image: url("image-url");
+					</pre>
+					<p>
+						<h4>Wiederhole Horizontal oder Vertikal</h4>
+						<p>
+							syntax: für horizontales Wiederholen
+						</p>
+						<pre>
+							background-repeat: repeat-x;
+						</pre>
+						<p>
+							Für vertikales Wiederholen x mit y ersetzen (repeat-y).
+						</p>
+						<h4>Fixieren</h4>
+						<p>
+							Um festzulegen, dass das Hintergrundbild fixiert werden soll (nicht mit dem Rest der Seite mitscrollen), verwendet man die 
+							Eigenschaft background-attachment.
+						</p>
+						<pre>
+							background-attachment: fixed;
+						</pre>
+					</p>
+				</p>				
+			</section>
+			<section id="B15">
+				<h2>Text</h2>
+				<p>
+					<h3>Text Farbe</h3>
+					<p>
+						Der color Property wird verwendet, um die Farbe des Textes festzulegen. z.B.:
+					</p>
+					<pre>
+						h1 {
+							color: green;
+						}
+					</pre>
+					<h3>Textausrichtung</h3>
+					<p>
+						Der text-align Property wird verwendet, um die horizontale Ausrichtung eines Textes festzulegen. Ein Text kann links oder rechts
+						ausgerichtet, zentriert oder justified sein.
+						<ul>
+							<li><b>Links: </b>text-align: left;</li>
+							<li><b>Rechts: </b>text-align: right;</li>
+							<li><b>Zentriert: </b>text-align: center;</li>
+							<li><b>justified: </b>text-align: justify;</li>
+						</ul>
+						Wenn die Textausrichtungseigenschaft auf justified gesetzt ist, wird jede Zeile so ausgedehnt, dass jede Zeile gleich breit ist 
+						und die linken und rechten Ränder gerade sind (wie in Zeitschriften und Zeitungen).
+					</p>
+					<h3>Text Dekoration</h3>
+					<p>
+						Der text-decoration property wird verwendet, um Dekorationen im Text zu setzen oder zu entfernen.
+						<ul>
+							<li>text-decoration: none;</li>
+							<li>text-decoration: overline;</li>
+							<li>text-decoration: line-through;</li>
+							<li>text-decoration: underline;</li>
+						</ul>
+					</p>
+					<h3>Textumwandlung</h3>
+					<p>
+						Der text-transform property wird verwendet, um Groß- und Kleinbuchstaben in einem Text anzugeben. Es kann verwendet werden, 
+						um alles in Groß- oder Kleinbuchstaben umzuwandeln oder den ersten Buchstaben jedes Wortes großzumachen.
+						<ul>
+							<li>text-transform: uppercase;</li>
+							<li>text-transform: lowercase;</li>
+							<li>text-transform: capitalize;</li>
+						</ul>
+					</p>
+				</p>			
+			</section>
+			<section id="B16">
+				<h2>Fonts</h2>
+				<p>
+					Die CSS font properties definieren die Schriftfamilie, die Kühnheit, die Größe und den Stil eines Textes.
+					<h3>Unterschied zwischen Serif und Sans-Serif Fonts</h3>
+					<p>
+						<b>Serif-Schriften</b> haben kleine Linien an den Enden bei einigen Buchstaben.<br/>
+						<b>Sans-serif</b> Fonts haben keine Linien an den Enden der Buchstaben.
+					</p>
+					<h3>Font Family</h3>
+					<p>
+						Die Schriftfamilie eines Textes wird mit dem font-family Property gesetzt. Sie sollten mehrere Fontnamen als "Fallback" -System 
+						enthalten. Wenn der Browser die erste Schrift nicht unterstützt, versucht er die nächste Schriftart und so weiter. Beginnen Sie mit 
+						der Schriftart, die Sie wollen, und enden mit einer generischen Familie, um den Browser eine ähnliche Schriftart in der generischen 
+						Familie zu wählen, wenn keine anderen Schriftarten verfügbar sind.
+					</p>
+					<p>
+						<b>Anmerkung: </b>Wenn der Name einer Schriftfamilie mehr als ein Wort ist, muss es in Anführungszeichen sein, wie zB: "Times New Roman". 
+						Mehr als eine Schriftfamilie wird in einer durch Kommas getrennten Liste angegeben. z.B.:
+					</p>
+					<pre>
+						font-family: "Times New Roman", Times, serif;
+					</pre>
+					<h3>Font Style</h3>
+					<p>
+						Die Eigenschaft font-style wird hauptsächlich verwendet, um kursiven Text anzugeben. Diese Eigenschaft hat drei Werte:
+						<ul>
+							<li><b>normal</b> - Der Text wird normal angezeigt</li>
+							<li><b>italic</b> - Der Text wird kursiv dargestellt</li>
+							<li><b>oblique</b> - Der Text ist "lehnend" (oblique ist sehr ähnlich italic, aber wird weniger unterstützt)</li>
+						</ul>
+						z.B.:
+					</p>
+					<pre>
+						font-style: italic;
+					</pre>
+					<h3>Font Size</h3>
+					<p>
+						Der font-size Property legt die Größe des Textes fest. Der font-size Wert kann eine absolute oder relative Größe sein.<br/>
+						Absolut Size:
+						<ul>
+							<li>Setzt den Text auf eine angegebene Größe</li>
+							<li>Erlaubt einem Benutzer nicht, die Textgröße in allen Browsern zu ändern (schlecht für Zugänglichkeitsgründe)</li>
+							<li>Absolute Größe ist nützlich, wenn die physikalische Größe der Ausgabe bekannt ist</li>
+						</ul>
+						Relative size:
+						<ul>
+							<li>Legt die Größe relativ zu den umgebenden Elementen fest</li>
+							<li>Ermöglicht einem Benutzer, die Textgröße in Browsern zu ändern</li>
+						</ul>
+						Die Einstellung der Textgröße mit Pixeln gibt Ihnen die volle Kontrolle über die Textgröße. Damit Benutzer die Größe des Textes ändern 
+						können (im Browser-Menü), verwenden viele Entwickler em statt Pixel. (1em = 16px: pixels/16=em) Syntax.:
+					</p>
+					<pre>
+						font-size: 2.5em; /* 40px/16=2.5em */
+					</pre>
+					<h3>Font Weight</h3>
+					<p>
+						Der font-weight Property gibt das Gewicht einer Schriftart an. (normal oder bold!).
+					</p>
+					<pre>
+						font-weight: bold;
+					</pre>
+				</p>			
+			</section>
+			<section id="B17">
+				<h2>Link gestallten</h2>
+				<p>
+					Links können mit jedem CSS Property gestalltet werden(z.B. color, font-family, background, etc.). Darüber hinaus können Links 
+					unterschiedlich gestylt werden, je nachdem, in welchem ​​Zustand sie sich befinden. Die vier Linkszustände sind:
+					<ul>
+						<li><b>a:link</b> - ein normaler, nicht besuchter Link</li>
+						<li><b>a:visited</b> - ein Link, den der Benutzer besucht hat</li>
+						<li><b>a:hover</b> - ein Link, wenn der Benutzer mit der Maus darüber fährt</li>
+						<li><b>a:active</b> - ein Link, wenn er gerade geklickt wird</li>
+					</ul>
+					Bei der Einstellung des Stils für mehrere Link-Zustände gibt es einige Regeln:
+					<ul>
+						<li>a:hover <b>muss</b> nacha:link und a:visited kommmen</li>
+						<li>a:active <b>muss</b> nach a:hover kommen</li>
+					</ul>
+					z.B.:
+				</p>
+				<pre>
+					/* unvisited link */
+					a:link {
+						color: red;
+					}
+
+					/* visited link */
+					a:visited {
+						color: green;
+					}
+
+					/* mouse over link */
+					a:hover {
+						color: hotpink;
+					}
+
+					/* selected link */
+					a:active {
+						color: blue;
+					}
+				</pre>
+			</section>
+			<section id="B18">
+				<h2>CSS Kombinatoren</h2>
+				<p>
+					Ein CSS-Selektor kann mehr als einen einfachen Selektor enthalten. Zwischen den einfachen Selektoren können wir einen Kombinator 
+					einschließen. Ein Kombinator ist etwas, das die Beziehung zwischen den Selektoren erklärt. Es gibt vier verschiedene Kombinatoren in CSS3:
+					<ul>
+						<li>descendant selector (Leertaste)</li>
+						<li>child selector (>)</li>
+						<li>adjacent sibling selector (+)</li>
+						<li>general sibling selector (~)</li>
+					</ul>
+					<h3>Descendant selector</h3>
+					<p>
+						Der Nachkommenselektor passt zu allen Elementen, die Nachkommen eines bestimmten Elements sind. Im folgenden Beispiel werden alle 
+						&lt;p&gt; Elemente innerhalb von &lt;div&gt; Elementen ausgewählt:
+					</p>
+					<pre>
+						div p {
+							background-color: yellow;
+						}
+					</pre>
+					<h3>Child Selector</h3>
+					<p>
+						Der Kinderselektor wählt alle Elemente aus, die die unmittelbaren Kinder eines bestimmten Elements sind. Im folgenden Beispiel werden 
+						alle &lt;p&gt;-Elemente ausgewählt, die unmittelbare Kinder eines &lt;div&gt;-Elements sind:
+					</p>
+					<pre>
+						div > p {
+							background-color: yellow;
+						}
+					</pre>
+					<h3>Adjacent Sibling Selector</h3>
+					<p>
+						Der benachbarte Geschwisterselektor wählt alle Elemente aus, die die benachbarten Geschwister eines bestimmten Elements sind. 
+						Geschwisterelemente müssen das gleiche übergeordnete Element haben, und "benachbart" bedeutet "unmittelbar nach". Im folgenden Beispiel 
+						werden alle &lt;p&gt; Elemente ausgewählt, die unmittelbar nach &lt;div&gt; Elementen platziert werden:
+					</p>
+					<pre>
+						div + p {
+							background-color: yellow;
+						}
+					</pre>
+					<h3>General Sibling Selector</h3>
+					<p>
+						Der allgemeine Geschwisterselektor wählt alle Elemente aus, die Geschwister eines bestimmten Elements sind. 
+						Das folgende Beispiel wählt alle &lt;p&gt; Elemente, die Geschwister von &lt;div&gt; Elementen sind:
+					</p>
+					<pre>
+						div ~ p {
+							background-color: yellow;
+						}
+					</pre>
+				</p>
+			</section>
+			<section id="B19">
+				<h2>Pseudo Klassen</h2>
+				<pre>
+					selector:pseudo-class {
+						property:value;
+					}
+				</pre>
+				<p>
+					z.B.: Bei Links: a:active.
+				</p>
+			</section>
+		</article>
+	</body>
+</html>
